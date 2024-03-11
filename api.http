@@ -1,0 +1,25 @@
+GET http://localhost:3010/api/v1/users/all
+
+### Agregar un usuario a la base de datos
+
+POST http://localhost:3010/api/v1/users
+Content-Type: application/json
+
+{
+  "name": "Joaquin Ledezma",
+  "email": "mr.ledezma02@gmail.com",
+  "password": "1234",
+  "phone": "3329559921"
+}
+
+### Recuperar un usuario por id
+GET http://localhost:3010/api/v1/users?email=mr.ledezma02@gmail.com
+### Autenticacion de Usuarios Login
+
+POST http://localhost:3010/api/v1/auth/login
+Content-Type: application/json
+
+  {
+    "email": "mr.ledezma02@gmail.com",
+    "password": "1234"
+  }
