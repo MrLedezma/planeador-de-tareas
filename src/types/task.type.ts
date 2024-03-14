@@ -5,9 +5,9 @@ export type Task = {
   id?: string
   name: string
   status: string
-  //detalle de la tarea
-  //El usuario que creo la tarea
-  //EL usuario que hara tarea
+  description?: string // Detalle de la tarea
+  createdBy?: string // Usuario que creó la tarea
+  assignedTo?: string // Usuario al que se le asignó la tarea
   createdAt?: Date
   lastModified?: Date
 }
